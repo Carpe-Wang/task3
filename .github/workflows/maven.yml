@@ -36,7 +36,9 @@ jobs:
       - name: Generate coverage badge and compare
         uses: cicirello/jacoco-badge-generator@v2
         with:
+          badges-directory: .github/badges
           args: --fail-on-coverage-decrease --fail-on-branch-coverage-decrease
+
 
 
 
