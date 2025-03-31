@@ -39,6 +39,12 @@ jobs:
           badges-directory: .github/badges
           args: --fail-on-coverage-decrease --fail-on-branch-coverage-decrease
 
+      - name: Upload coverage badges
+        uses: actions/upload-artifact@v4
+        with:
+          name: jacoco-badges
+          path: .github/badges
+
 
 
 
