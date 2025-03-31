@@ -5,35 +5,35 @@ import static org.junit.jupiter.api.Assertions.*;
 
 public class ArrayUtilsTest {
 
-//    @Test
-//    public void testCountOfWithMultipleOccurrences() {
-//        int[] arr = {1, 2, 3, 2, 4, 2};
-//        assertEquals(3, ArrayUtils.countOf(arr, 2));
-//    }
-//
-//    @Test
-//    public void testCountOfWithSingleOccurrence() {
-//        int[] arr = {5, 6, 7};
-//        assertEquals(1, ArrayUtils.countOf(arr, 6));
-//    }
+    @Test
+    public void testCountOfWithMultipleOccurrences() {
+        int[] arr = {1, 2, 3, 2, 4, 2};
+        assertEquals(3, ArrayUtils.countOf(arr, 2));
+    }
 
-//    @Test
-//    public void testCountOfWithNoOccurrence() {
-//        int[] arr = {8, 9, 10};
-//        assertEquals(0, ArrayUtils.countOf(arr, 1));
-//    }
+    @Test
+    public void testCountOfWithSingleOccurrence() {
+        int[] arr = {5, 6, 7};
+        assertEquals(1, ArrayUtils.countOf(arr, 6));
+    }
 
-//    @Test
-//    public void testCountOfWithEmptyArray() {
-//        int[] arr = {};
-//        assertEquals(0, ArrayUtils.countOf(arr, 0));
-//    }
+    @Test
+    public void testCountOfWithNoOccurrence() {
+        int[] arr = {8, 9, 10};
+        assertEquals(0, ArrayUtils.countOf(arr, 1));
+    }
 
-//    @Test
-//    public void testFindMaxWithMaxInMiddle() {
-//        int[] arr = {1, 5, 3};
-//        assertEquals(5, ArrayUtils.findMax(arr));
-//    }
+    @Test
+    public void testCountOfWithEmptyArray() {
+        int[] arr = {};
+        assertEquals(0, ArrayUtils.countOf(arr, 0));
+    }
+
+    @Test
+    public void testFindMaxWithMaxInMiddle() {
+        int[] arr = {1, 5, 3};
+        assertEquals(5, ArrayUtils.findMax(arr));
+    }
 
     @Test
     public void testFindMaxWithMaxAtStart() {
