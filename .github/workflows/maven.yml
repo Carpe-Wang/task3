@@ -37,9 +37,11 @@ jobs:
         uses: cicirello/jacoco-badge-generator@v2
         with:
           badges-directory: .github/badges
-          fail-on-coverage-decrease: true
-          fail-on-branch-coverage-decrease: true
-
+          args: >
+            --fail-on-coverage-decrease
+            --fail-on-branch-coverage-decrease
+      
+      
 
       - name: Upload coverage badges
         uses: actions/upload-artifact@v4
