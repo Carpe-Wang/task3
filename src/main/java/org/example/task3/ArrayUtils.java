@@ -8,4 +8,13 @@ public class ArrayUtils {
         }
         return count;
     }
+    public static int findMax(int[] nums) {
+        int max = nums[0];
+        for (int n : nums) {
+            if (n > max) {
+                max = n;
+            }
+        }
+        return max;
+    }
 }
