@@ -41,7 +41,8 @@ jobs:
           branches-badge-filename: branches.svg
           generate-coverage-badge: true
           generate-branches-badge: true
-
+          fail-on-coverage-decrease: true
+          fail-on-branch-coverage-decrease: true
 
       - name: Upload badges backup
         uses: actions/upload-artifact@v4
